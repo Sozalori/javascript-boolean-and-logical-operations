@@ -1,6 +1,10 @@
-let numberA = 100;
-const numberB = "20";
+let lastMonthPaidMoreThan4000 = true;
+let isWeekday = true;
+let hasBoughtProductFromITCategory = false;
+let hasAttendedDiscountEvent = true;
+let isPlatinum = false;
 
-numberA = 10;
+let hasPromotion = ((lastMonthPaidMoreThan4000 ) && (isWeekday) && (!hasBoughtProductFromITCategory )
+&& (!hasAttendedDiscountEvent )) || (isPlatinum );
 
-console.log(`Sum: ${numberA + Number(numberB)}`);
+console.log(hasPromotion);
